@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Architects Services</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <style>
+      /*--Floating buttons*/
+      body {
+        background: linear-gradient(90deg, #ffffff 0%, #ebebeb 100%);
+      }
+
+      .btn-floating {
+        position: fixed;
+        right: 25px;
+        overflow: hidden;
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        border: 0;
+        z-index: 9999;
+        color: white;
+        transition: 0.2s;
+      }
+
+      .btn-floating:hover {
+        width: auto;
+        padding: 0 20px;
+        cursor: pointer;
+      }
+
+      .btn-floating span {
+        font-size: 16px;
+        margin-left: 5px;
+        transition: 0.2s;
+        line-height: 0px;
+        display: none;
+      }
+
+      .btn-floating:hover span {
+        display: inline-block;
+      }
+
+      .btn-floating:hover img {
+        margin-bottom: -3px;
+      }
+
+      .btn-floating.whatsapp {
+        bottom: 25px;
+        background-color: #34af23;
+        border: 2px solid #fff;
+      }
+
+      .btn-floating.whatsapp:hover {
+        background-color: #1f7a12;
+      }
+
+      .btn-floating.wa {
+        bottom: 85px;
+        background-color: #34af23;
+        border: 2px solid #fff;
+      }
+
+      .btn-floating.wa:hover {
+        background-color: #1f7a12;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <!-- Posisi konten -->
+      <a
+        href="https://api.whatsapp.com/send?phone=6285963131530"
+        target="_blank"
+      >
+        <button class="btn-floating wa">
+          <img src="wa.png" alt="wa" />
+          <span>Wa-1</span>
+        </button>
+      </a>
+      <a
+        href="https://api.whatsapp.com/send?phone=6281324610584"
+        target="_blank"
+      >
+        <button class="btn-floating whatsapp">
+          <img src="wa.png" alt="whatsApp" />
+          <span>Wa-2</span>
+        </button>
+      </a>
+    </div>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="#home" class="w3-bar-item w3-button"><b>PB</b> Architects</a>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+          <a href="#about" class="w3-bar-item w3-button">About</a>
+          <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header
+      class="w3-display-container w3-content w3-wide"
+      style="max-width: 1500px"
+      id="home"
+    >
+      <img
+        class="w3-image"
+        src="gambar2.jpg"
+        alt="Architecture"
+        width="1500"
+        height="800"
+      />
+      <div class="w3-display-middle w3-margin-top w3-center">
+        <h1 class="w3-xxlarge w3-text-white">
+          <span class="w3-padding w3-black w3-opacity-min"><b>PB</b></span>
+          <span class="w3-hide-small w3-text-light-grey">Architects</span>
+        </h1>
+      </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content w3-padding" style="max-width: 1564px">
+      <!-- Project Section -->
+      <div class="w3-container w3-padding-32" id="projects">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
+          Projects
+        </h3>
+      </div>
+
+      <div class="w3-row-padding">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">
+              Design Kolam Renang
+            </div>
+            <img src="gambar.jpg" alt="House" style="width: 100%" />
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">
+              Basic Sketch
+            </div>
+            <img src="gambar3.jpg" alt="House" style="width: 100%" />
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Modern House Sketch</div>
+            <img src="gambar4.jpg" alt="House" style="width: 100%" />
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Basic House Design</div>
+            <img src="gambar5.jpg" alt="House" style="width: 100%" />
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row-padding">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">
+              Modern House
+            </div>
+            <img src="gambar6.jpg" alt="House" style="width: 99%" />
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">
+              Simple House
+            </div>
+            <img src="gambar7.jpg" alt="House" style="width: 99%" />
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">Denah Rumah</div>
+            <img src="gambar denah.jpg" alt="House" style="width: 99%" />
+          </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-display-container">
+            <div class="w3-display-topleft w3-black w3-padding">
+              3D House Design
+            </div>
+            <img src="utama.jpg" alt="House" style="width: 99%" />
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="w3-container w3-padding-32" id="about">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
+          About
+        </h3>
+        <p>
+          Selamat datang di PB Architects, penyedia jasa arsitek profesional
+          untuk mewujudkan impian desain dan konstruksi Anda. Kami adalah tim
+          arsitek yang berdedikasi dalam menciptakan ruang yang fungsional,
+          estetis, dan inovatif. Dengan pengalaman kami dalam industri ini, kami
+          siap membantu Anda merancang dan membangun proyek yang unik dan
+          berkualitas tinggi. Percayakan kepada kami visi Anda, dan kami akan
+          bekerja sama untuk menghasilkan solusi arsitektur yang memenuhi
+          kebutuhan dan harapan Anda. Bersama-sama, mari kita ciptakan
+          lingkungan yang inspiratif dan harmonis untuk kehidupan Anda.
+        </p>
+      </div>
+
+      <div class="w3-row-padding w3-grayscale">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <img src="profil2.jpg" alt="John" style="width: 100%" />
+          <h3>Dyn Adriansyah A.</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>
+            "Kesuksesan bukanlah tujuan akhir, melainkan perjalanan yang terus
+            berlanjut."
+          </p>
+          <p>
+            <button class="w3-button w3-light-grey w3-block">Contact</button>
+          </p>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <img src="profil2.jpg" alt="Jane" style="width: 100%" />
+          <h3>Adrian F.W.</h3>
+          <p class="w3-opacity">IT Team</p>
+          <p>
+            "Kunci kesuksesan terletak pada kemauan untuk memulai dan keberanian
+            untuk terus melangkah."
+          </p>
+          <p>
+            <button class="w3-button w3-light-grey w3-block">Contact</button>
+          </p>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <img src="profil2.jpg" alt="Mike" style="width: 100%" />
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>
+            "Keberhasilan sejati adalah ketika kita dapat menginspirasi dan
+            memberi dampak positif pada kehidupan orang lain."
+          </p>
+          <p>
+            <button class="w3-button w3-light-grey w3-block">Contact</button>
+          </p>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <img src="profil2.jpg" alt="Dan" style="width: 100%" />
+          <h3>Dan Star</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>
+            "Kesuksesan adalah ketika kita tumbuh dan berkembang menjadi versi
+            terbaik dari diri kita sendiri."
+          </p>
+          <p>
+            <button class="w3-button w3-light-grey w3-block">Contact</button>
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="w3-container w3-padding-32" id="contact">
+        <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
+          Contact
+        </h3>
+        <p>Lets get in touch and talk about your next project.</p>
+        <form action="gambar.php" target="_blank">
+          <input
+            class="w3-input w3-border"
+            type="text"
+            placeholder="Name"
+            required
+            name="Name"
+          />
+          <input
+            class="w3-input w3-section w3-border"
+            type="text"
+            placeholder="Email"
+            required
+            name="Email"
+          />
+          <input
+            class="w3-input w3-section w3-border"
+            type="text"
+            placeholder="Subject"
+            required
+            name="Subject"
+          />
+          <input
+            class="w3-input w3-section w3-border"
+            type="text"
+            placeholder="Comment"
+            required
+            name="Comment"
+          />
+          <button class="w3-button w3-black w3-section" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+
+      <!-- Image of location/map -->
+      <div class="w3-container">
+        <img src="utama2.jpg" class="w3-image" style="width: 100%" />
+      </div>
+
+      <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-16">
+      <p>
+        Powered by
+        <a
+          href="https://www.pelitabangsa.ac.id/"
+          title="PB Architects"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
